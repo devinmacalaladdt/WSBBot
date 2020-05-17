@@ -1,0 +1,16 @@
+Basic Python Script to scrape main discussion thread on r/wallstreetbets. When running the script, pass in ticker symbols as space 
+seperated list for the bot to parse through (example: $python bot_read.py TSLA SPY WMT ...). The bot will comb through top level 
+comments of the thread and look for mentions of those tickers. If it finds a match, it will output the time/date, the comment, and its 
+replies to a file called res.txt that should appear in the same directory as the script (note each time the bot is ran this file will 
+be written over). At the top of the file, the date of the thread read is displayed. All output is in the following format:
+
+====================================================
+TICKER (the one mentioned in this comment that was matched to one passed in)
+[month/day/year---hour:minute]
+commentcommentcommentcommentcommentcommentcommentcomment
+commentcommentcommentcommentcommentcommentcommentcomment
+commentcomment
+    ->reply1
+    ->reply2
+    ->...
+====================================================
