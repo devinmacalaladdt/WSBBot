@@ -15,14 +15,18 @@ commentcomment
     ->...
 ====================================================
 
-Each comment is parsed entirely and it counts the mentions of tickers collectivly within these comments. At the end of the file, the tickers along with their mention counts are outputted in the following format:
+Each comment is parsed entirely and it counts the mentions of tickers collectivly within these comments. 
+At the end of the file, the tickers along with their mention counts are outputted in the following format:
 
 TOP TICKERS:
 TICKER1	mentions: 11
 TICKER2	mentions: 1
 ...
 
-There are issues with this however, as it only tracks wordes with four or less letters that are all uppercase (meaning words like 'I' or 'LMAO' will be picked up and counted).
+There are issues with this however, as it only tracks wordes with four or less letters that are all
+uppercase (meaning words like 'I' or 'LMAO' will be picked up and counted).
 
 Note: The praw python package must be installed for operation. Look into it here: https://praw.readthedocs.io/en/latest/
-Additionally, to have the script run automatically (as a bot should), you have to register a bot with your reddit account and edit the praw.ini file to have praw link to it. Look into it here: https://chatbotslife.com/how-to-build-a-reddit-bot-c890efb330c1
+Additionally, to have the script run automatically (as a bot should), you have to register a bot with your reddit account 
+and edit the praw.ini file to have praw link to it. 
+Look into it here: https://chatbotslife.com/how-to-build-a-reddit-bot-c890efb330c1
